@@ -11,6 +11,9 @@ const Navbar = () => {
             <ul>
                 <li>Home</li>
                 <li>Cart</li>
+                <div>
+                    
+                </div>
             </ul>
         </div>
     </div>
