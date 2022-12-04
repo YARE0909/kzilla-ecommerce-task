@@ -1,0 +1,33 @@
+.NavBar {
+    background-color: #313238;
+    height: 70px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavBar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.NavBar li {
+    padding: 20px;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: large;
+}
+
+.NavBar li:hover {
+    font-weight: bold;
+    color: blue;
+}

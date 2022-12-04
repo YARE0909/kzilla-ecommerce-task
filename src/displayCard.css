@@ -1,0 +1,41 @@
+.displayCard {
+    padding: 5px;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow: auto;
+    
+}
+
+.displayCard img {
+    width: fit-content;
+  height: 250px;
+  object-fit: cover;
+}
+
+.displayCard button {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #82837b;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    font-size: xx-small;
+    font-style: normal;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.displayCard button:hover {
+    background-color: #aaa5a1;
+}
+
+.name {
+    font-size: x-small;
+}
+.price {
+    font-size: x-small;
+}
