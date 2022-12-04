@@ -5,12 +5,15 @@ const ProductDisplay = ({ products }) => {
   return (
     <div>
       <div className="main">
-        {products.map((product) => (
-          <DisplayCard
-            name={product.title}
-            price={product.price}
-            image={product.image}
-          />
+        {products.map((product, key) => (
+          <div key={key}>
+
+            <DisplayCard
+              name={product.title}
+              price={product.price}
+              image={product.image}
+            />
+          </div>
         ))}
       </div>
     </div>
