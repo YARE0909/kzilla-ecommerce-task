@@ -1,0 +1,25 @@
+.navBar {
+  position: fixed;
+  top: 0;
+}
+
+.main {
+  width: full;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer {
+  margin-top: 140px;
+  width: 100%;
+  height: fit-content;
+  padding-left: 20px;
+  
+}

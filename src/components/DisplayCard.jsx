@@ -11,7 +11,7 @@ const DisplayCard = ({name, image, price}) => {
             <h1>{name}</h1>
         </div>
         <div className="price">
-            <h1>{price}</h1>
+            <h1>${price}</h1>
         </div>
         <button className="addToCart">
             <h1>Add To Cart</h1>
