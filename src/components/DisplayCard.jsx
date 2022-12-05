@@ -1,13 +1,12 @@
 import React from 'react'
 import '../displayCard.css'
+import cartDataJson from "../cartData.json";
 
 const DisplayCard = ({name, image, price}) => {
     const addCartCallback = () => {
         console.log("HELLO");
-        let cartData = localStorage.getItem("userCart");
-        let parsedCartData = JSON.parse(cartData);
-        parsedCartData.push("TEST");
-        console.log(parsedCartData);
+        cartDataJson['cartData'].push(name)
+       console.log(cartDataJson['cartData']);
     }
   return (
     <div className='displayCard'>

@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     z-index: 0;
     
 }
@@ -34,8 +34,8 @@
     font-style: normal;
     transition: 500ms;
     cursor: pointer;
-    position: absolute;
-    bottom: 0;
+    
+    
     margin-bottom: 20px;
 }
 
