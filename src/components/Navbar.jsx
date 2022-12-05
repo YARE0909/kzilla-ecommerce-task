@@ -12,11 +12,10 @@ const Navbar = () => {
     return (
       <div className="NavBar">
         <div>
-          <h1>SRM MART</h1>
+          <h1 className="font-bold">SRM MART</h1>
         </div>
         <div>
           <ul>
-            <li>Home</li>
             <li onClick={displayCart}>Cart</li>
             <li lassName={cartState ? "block absolute right-3" : "hidden"}>
               <div className="w-[200px] h-[200px] bg-white absolute right-3 mt-16 rounded-lg">
@@ -39,7 +38,6 @@ const Navbar = () => {
           </div>
           <div>
             <ul>
-              <li>Home</li>
               <li onClick={displayCart}>Cart</li>
               <li className={cartState ? "block absolute right-3" : "hidden"}>
                 <div className="w-[200px] h-[200px] bg-white text-black flex flex-col items-center absolute right-3 mt-16 rounded-lg">
