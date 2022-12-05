@@ -1,5 +1,5 @@
 .NavBar {
-    background-color: #313238;
+    background-color: #133c90;
     height: 70px;
     width: 100%;
     color: white;
@@ -11,6 +11,8 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1;
+    font-size: x-large;
+    
 }
 
 .NavBar ul {
@@ -30,5 +32,4 @@
 
 .NavBar li:hover {
     font-weight: bold;
-    color: blue;
 }

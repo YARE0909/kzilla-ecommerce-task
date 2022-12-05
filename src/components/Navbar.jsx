@@ -4,7 +4,7 @@ import cartDataJson from "../cartData.json";
 
 const Navbar = () => {
   
-  console.log(cartDataJson['cartData']);
+  console.log(  );
 
   const [cartState, setCartState] = useState(false);
   const displayCart = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
           <ul>
             <li onClick={displayCart}>Cart</li>
             <div className={cartState ? "block absolute right-3" : "hidden"}>
-              <div className="w-[200px] h-fit min-h-[300px] bg-white absolute right-3 mt-16 rounded-lg">
+              <div className="w-[200px] h-fit min-h-[300px] bg-black absolute right-3 mt-16 rounded-lg">
                 <div className="flex flex-col text-black p-4 overflow-auto">
                   {cartDataJson["cartData"].map((product, key) => (
                     <div key={key}>

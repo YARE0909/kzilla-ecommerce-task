@@ -3,14 +3,13 @@
     width: 300px;
     height: 450px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #f1ebe2;
     overflow: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    /* position: relative; */
-    z-index: 0;
+ 
     
 }
 
@@ -19,6 +18,11 @@
   height: 250px;
   align-items: center;
   object-fit: contain;
+  padding: 10;
+}
+
+.imgHolder{
+    padding: 10px;
 }
 
 .displayCard button {
@@ -35,7 +39,7 @@
     transition: 500ms;
     cursor: pointer;
     
-    
+   
     margin-bottom: 20px;
 }
 
@@ -52,3 +56,4 @@
 .price {
     font-size: medium;
 }
+
