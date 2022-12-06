@@ -1,6 +1,5 @@
 import "../navbar.css";
 import cartDataJson from "../cartData.json";
-import { useState } from "react";
 
 const Navbar = () => {
   
