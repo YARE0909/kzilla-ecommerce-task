@@ -4,7 +4,7 @@ import DisplayCard from "./DisplayCard";
 const ProductDisplay = ({ products }) => {
   return (
     <div>
-      <div className="main p-28">
+      <div className="main pt-28">
         {products.map((product, key) => (
           <div key={key}>
 

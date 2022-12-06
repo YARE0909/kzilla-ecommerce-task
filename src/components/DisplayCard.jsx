@@ -1,9 +1,14 @@
 import React from "react";
 import "../displayCard.css";
+import cartDataJson from "../cartData.json";
 
 const DisplayCard = ({ name, image, price }) => {
   const addCartCallback = (e) => {
-    console.log("Clicked");
+    const product = e.target.parentElement.parentElement.querySelector(".name").innerHTML;
+    console.log(cartDataJson.cartData);
+    cartDataJson.cartData.push(product)
+    console.log(cartDataJson.cartData);
+    console.log(product);
   };
   return (
     <div className="displayCard">
@@ -11,7 +16,7 @@ const DisplayCard = ({ name, image, price }) => {
         <img src={image} alt="/" />
       </div>
       <div className="name">
-        <h1>{name}</h1>
+        {name}
       </div>
       <div className="price">
         <h1>${price}</h1>

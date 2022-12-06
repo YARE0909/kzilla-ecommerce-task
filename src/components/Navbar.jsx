@@ -1,61 +1,29 @@
-import React, { useState } from "react";
 import "../navbar.css";
 import cartDataJson from "../cartData.json";
+import { useState } from "react";
 
 const Navbar = () => {
   
-  console.log(  );
 
-  const [cartState, setCartState] = useState(false);
-  const displayCart = () => {
-    setCartState(!cartState);
-  };
-  if (cartDataJson['cartData']) {
-    return (
-      <div className="NavBar">
+  return (
+    <div className="NavBar">
+      <div>
+        <h1 className="font-bold">SRM MART</h1>
+      </div>
+      <div className="w-[13%] h-[82vh] bg-[#30353b] fixed top-0 right-0 mt-40 rounded-lg m-3">
         <div>
-          <h1 className="font-bold">SRM MART</h1>
-        </div>
-        <div>
-          <ul>
-            <li onClick={displayCart}>Cart</li>
-            <div className={cartState ? "block absolute right-3" : "hidden"}>
-              <div className="w-[200px] h-fit min-h-[300px] bg-black absolute right-3 mt-16 rounded-lg">
-                <div className="flex flex-col text-black p-4 overflow-auto">
-                  {cartDataJson["cartData"].map((product, key) => (
-                    <div key={key}>
-                      <h1>{product}</h1>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </ul>
+          <div className="w-full h-full flex justify-center p-4 text-3xl font-bold">
+            <h1>Your Cart</h1>
+          </div>
+          <div className="p-2 overflow-auto">
+            {cartDataJson.cartData.map((item, key) => {
+              return <div key={key}>{item}</div>;
+            })}
+          </div>
         </div>
       </div>
-    );
-  } else {
-    return (
-      <div className="NavBar">
-        <div>
-          <h1>SRM MART</h1>
-        </div>
-        <div>
-          <ul>
-            <li onClick={displayCart}>Cart</li>
-            <li className={cartState ? "block absolute right-3" : "hidden"}>
-              <div className="w-[200px] h-[200px] bg-white text-black flex flex-col items-center absolute right-3 mt-16 rounded-lg">
-                <h1 className="text-3xl font-bold p-3">Your Items</h1>
-                <div className="w-full h-full flex items-center justify-center">
-                  <h1 className="font-semibold">Your cart is empty :(</h1>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default Navbar;
