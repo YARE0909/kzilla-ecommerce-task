@@ -1,8 +1,10 @@
 import "../navbar.css";
 import cartDataJson from "../cartData.json";
+// import { useState } from "react";
 
 const Navbar = () => {
-  
+  // const [cartData, setCartData] = useState([]);
+  // setCartData(cartDataJson.cartData);
 
   return (
     <div className="NavBar">

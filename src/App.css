@@ -4,11 +4,12 @@
 }
 
 .main {
-  width: full;
+  width: 100%;
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 30px;
+  left: 0;
 }
 
 .container {
