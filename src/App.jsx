@@ -14,7 +14,7 @@ function App() {
     axios
       .get(process.env.REACT_APP_API_URL)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setProducts(res.data);
         setLoader(false)
       })
